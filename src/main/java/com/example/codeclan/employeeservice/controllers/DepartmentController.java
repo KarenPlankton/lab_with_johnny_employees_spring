@@ -22,7 +22,7 @@ public class DepartmentController {
         return departmentRepository.findAll();
     }
 
-    @GetMapping(value = "/employees/{id}")
+    @GetMapping(value = "/departments/{id}")
     public Optional<Department> getDepartmentById(@PathVariable Long id) {
         return departmentRepository.findById(id);
     }
