@@ -23,8 +23,8 @@ public class ProjectController {
         return projectRepository.findAll();
     }
 
-    @GetMapping(value = "/employees/{id}")
-    public Optional<Project> getPirateById(@PathVariable Long id) {
+    @GetMapping(value = "/projects/{id}")
+    public Optional<Project> getProjectById(@PathVariable Long id) {
         return projectRepository.findById(id);
     }
 }

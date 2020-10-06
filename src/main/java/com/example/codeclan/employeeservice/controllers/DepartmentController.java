@@ -16,7 +16,7 @@ public class DepartmentController {
     @Autowired
     private DepartmentRepository departmentRepository;
 
-    @GetMapping(value = "/")
+    @GetMapping(value = "/departments")
 
     public List<Department> getAllDepartments() {
         return departmentRepository.findAll();
